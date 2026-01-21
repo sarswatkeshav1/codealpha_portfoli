@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Raj | Frontend Developer</title>
+    <meta name="description" content="Portfolio of a Frontend Developer and Cybersecurity Enthusiast. Building clean, fast, and responsive web experiences.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Rahul Raj<span class="accent">.</span></a>
+            
+            <nav class="nav-desktop">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#" class="btn btn-outline small-btn">Download Resume</a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <p class="hero-label">FRONTEND DEVELOPER • 7TH SEM CSE</p>
+                    <h1 class="hero-title">Building clean, <span class="gradient-text">fast</span>, and responsive web experiences.</h1>
+                    <p class="hero-subtitle">I’m a frontend developer focused on crafting performant, accessible interfaces with HTML, CSS, JavaScript, and React.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-placeholder">
+                        <div class="status-card">
+                            <p class="status-text">Currently working on:<br><strong>Portfolio Website</strong></p>
+                            <div class="progress-bar"><div class="progress-fill"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-hint">
+                <span class="scroll-text">Scroll to explore</span>
+                <span class="scroll-icon">↓</span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container section-container">
+                <div class="about-content">
+                    <span class="section-label">ABOUT</span>
+                    <h2 class="section-title">Who I am</h2>
+                    <p class="about-intro">I'm a final year Computer Science student with a passion for building beautiful web applications.</p>
+                    <p class="about-desc">Currently in my 7th semester of B.Tech (CSE), I've honed my skills through frontend internships and personal projects. My interests lie at the intersection of creative web development and cybersecurity.</p>
+                    
+                    <div class="stats-card">
+                        <div class="stat-item">
+                            <span class="stat-value">7th Sem</span>
+                            <span class="stat-label">B.Tech (CSE)</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">Intern</span>
+                            <span class="stat-label">Frontend Dev</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="card-icon">&lt;/&gt;</div>
+                        <h3 class="card-title">What I Do</h3>
+                        <ul class="card-list">
+                            <li>Responsive UI development</li>
+                            <li>Clean, accessible layouts</li>
+                            <li>Integrating animations & interactivity</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon">⚡</div>
+                        <h3 class="card-title">Tech Snapshot</h3>
+                        <div class="tags-container">
+                            <span class="pill">HTML5</span>
+                            <span class="pill">CSS3</span>
+                            <span class="pill">JavaScript</span>
+                            <span class="pill">React</span>
+                            <span class="pill">Git</span>
+                            <span class="pill">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header center-text">
+                    <span class="section-label">SKILLS</span>
+                    <h2 class="section-title">What I work with</h2>
+                    <p class="section-subtitle">Tools and technologies I use to ship frontend experiences.</p>
+                </div>
+
+                <div class="tabs-container">
+                    <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                    <button class="tab-btn" data-tab="backend">Backend Basics</button>
+                    <button class="tab-btn" data-tab="tools">Tools</button>
+                </div>
+
+                <div class="skills-grid active" id="frontend">
+                    <!-- Frontend Skills -->
+                    <div class="skill-card">
+                        <div class="skill-icon">H</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">HTML5</h3>
+                            <p class="skill-desc">Semantic structure, SEO-friendly</p>
+                        </div>
+                        <div class="skill-level">●●●●○</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">C</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">CSS3</h3>
+                            <p class="skill-desc">Flexbox, Grid, Animations</p>
+                        </div>
+                        <div class="skill-level">●●●●○</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">JS</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">JavaScript</h3>
+                            <p class="skill-desc">ES6+, DOM Manipulation</p>
+                        </div>
+                        <div class="skill-level">●●●○○</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">R</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">React</h3>
+                            <p class="skill-desc">Components, Hooks, State</p>
+                        </div>
+                        <div class="skill-level">●●●○○</div>
+                    </div>
+                </div>
+
+                <div class="skills-grid" id="backend">
+                    <div class="skill-card">
+                        <div class="skill-icon">N</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Node.js</h3>
+                            <p class="skill-desc">Basic runtime knowledge</p>
+                        </div>
+                        <div class="skill-level">●●○○○</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">A</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">APIs</h3>
+                            <p class="skill-desc">RESTful principles</p>
+                        </div>
+                        <div class="skill-level">●●●○○</div>
+                    </div>
+                </div>
+
+                <div class="skills-grid" id="tools">
+                    <div class="skill-card">
+                        <div class="skill-icon">G</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Git & GitHub</h3>
+                            <p class="skill-desc">Version control</p>
+                        </div>
+                        <div class="skill-level">●●●●○</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">V</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">VS Code</h3>
+                            <p class="skill-desc">Power user</p>
+                        </div>
+                        <div class="skill-level">●●●●●</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">PROJECTS</span>
+                    <h2 class="section-title">Selected work</h2>
+                    <p class="section-subtitle">A snapshot of the projects I’ve built and experimented with.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-thumb">
+                            <!-- Placeholder -->
+                            <div class="thumb-placeholder">Portfolio</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-desc">A responsive, personal portfolio with smooth scrolling and JS-powered interactions.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">
+                                    <span class="icon">G</span> View Code
+                                </a>
+                                <a href="#" class="link-btn">
+                                    <span class="icon">↗</span> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-thumb">
+                            <div class="thumb-placeholder">E-Commerce UI</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Mini E-Commerce</h3>
+                            <p class="project-desc">Product listing page with cart functionality and filter features.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">View Code</a>
+                                <a href="#" class="link-btn">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-thumb">
+                            <div class="thumb-placeholder">Weather App</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Dashboard</h3>
+                            <p class="project-desc">A dashboard fetching real-time weather data using public APIs.</p>
+                            <div class="project-tags">
+                                <span class="tag">JS</span>
+                                <span class="tag">API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">View Code</a>
+                                <a href="#" class="link-btn">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <span class="section-label">CONTACT</span>
+                    <h2 class="section-title">Let’s build something together</h2>
+                    <p class="contact-desc">Open to internships, projects, and collaboration in frontend development and cybersecurity.</p>
+                    
+                    <ul class="contact-list">
+                        <li>
+                            <span class="icon">✉</span>
+                            <a href="mailto:hello@rahulraj.dev">hello@rahulraj.dev</a>
+                        </li>
+                        <li>
+                            <span class="icon">📍</span>
+                            <span>Mumbai, India</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        <p class="form-note">Or email me directly at hello@rahulraj.dev</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2025 Rahul Raj. All rights reserved.</p>
+            <p class="credits">Built with HTML, CSS & JavaScript <span class="heart">♥</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
